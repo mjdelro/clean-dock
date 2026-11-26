@@ -1,0 +1,13 @@
+{
+  "uuid": "clean-dock@michaeldelrosar.io",
+  "name": "Clean Dock",
+  "description": "Minimal GNOME Shell bottom dock with multi-monitor isolation, intellihide, dynamic transparency, and notification badges.",
+  "shell-version": [
+    "50",
+    "51"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.clean-dock",
+  "url": "https://github.com/mjdelro/clean-dock",
+  "version": 2,
+  "version-name": "1.1.0"
+}

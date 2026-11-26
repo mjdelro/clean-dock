@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.clean-dock" path="/org/gnome/shell/extensions/clean-dock/">
+    <key name="icon-size" type="i">
+      <range min="28" max="72"/>
+      <default>48</default>
+      <summary>Maximum icon size</summary>
+      <description>Maximum app icon size in pixels before automatic width scaling.</description>
+    </key>
+    <key name="bottom-margin" type="i">
+      <range min="0" max="24"/>
+      <default>6</default>
+      <summary>Bottom margin</summary>
+      <description>Distance in pixels between the dock pill and the bottom monitor edge.</description>
+    </key>
+    <key name="dynamic-transparency" type="b">
+      <default>true</default>
+      <summary>Dynamic transparency</summary>
+      <description>Use translucent background when clear and solid background when overlapped or in Overview.</description>
+    </key>
+    <key name="transparent-opacity" type="i">
+      <range min="0" max="100"/>
+      <default>15</default>
+      <summary>Clear background opacity</summary>
+      <description>Pill background opacity percentage when no window overlaps the dock.</description>
+    </key>
+    <key name="solid-opacity" type="i">
+      <range min="20" max="100"/>
+      <default>82</default>
+      <summary>Solid background opacity</summary>
+      <description>Pill background opacity percentage in Overview or when windows overlap.</description>
+    </key>
+    <key name="multi-monitor" type="b">
+      <default>true</default>
+      <summary>Show on all monitors</summary>
+      <description>Display a dock on every connected monitor instead of only the primary monitor.</description>
+    </key>
+    <key name="isolate-monitors" type="b">
+      <default>true</default>
+      <summary>Isolate windows per monitor</summary>
+      <description>Only show running non-favorite apps and window dots belonging to each dock's monitor.</description>
+    </key>
+    <key name="isolate-workspaces" type="b">
+      <default>false</default>
+      <summary>Isolate windows per workspace</summary>
+      <description>Filter running apps and window indicators to the active workspace.</description>
+    </key>
+    <key name="intellihide" type="b">
+      <default>true</default>
+      <summary>Intellihide</summary>
+      <description>Automatically hide the dock when overlapped by windows and reveal on bottom-edge hover.</description>
+    </key>
+    <key name="hide-delay-ms" type="i">
+      <range min="100" max="1000"/>
+      <default>280</default>
+      <summary>Hide delay (ms)</summary>
+      <description>Delay in milliseconds before hiding the dock after the pointer leaves.</description>
+    </key>
+    <key name="click-action" type="s">
+      <choices>
+        <choice value="cycle"/>
+        <choice value="minimize"/>
+        <choice value="activate"/>
+      </choices>
+      <default>'cycle'</default>
+      <summary>Focused app click action</summary>
+      <description>Action when clicking an app that is already focused on the dock's monitor.</description>
+    </key>
+    <key name="scroll-switch-windows" type="b">
+      <default>true</default>
+      <summary>Scroll to switch windows</summary>
+      <description>Cycle through an app's windows when scrolling over its dock icon.</description>
+    </key>
+    <key name="show-notification-badges" type="b">
+      <default>true</default>
+      <summary>Show notification badges</summary>
+      <description>Display unread notification counts from GNOME Message Tray and Unity LauncherEntry.</description>
+    </key>
+    <key name="show-running-dots" type="b">
+      <default>true</default>
+      <summary>Show running window dots</summary>
+      <description>Display per-window indicator dots under running applications.</description>
+    </key>
+    <key name="show-tooltips" type="b">
+      <default>true</default>
+      <summary>Show hover tooltips</summary>
+      <description>Display the application name above hovered dock icons.</description>
+    </key>
+  </schema>
+</schemalist>

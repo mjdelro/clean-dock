@@ -1,0 +1,99 @@
+.clean-dock-pill {
+    border-radius: 18px;
+    padding: 6px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.32);
+    transition-duration: 180ms;
+}
+
+.clean-dock-pill.transparent {
+    background-color: rgba(24, 24, 28, 0.15);
+}
+
+.clean-dock-pill.solid {
+    background-color: rgba(24, 24, 28, 0.82);
+}
+
+.clean-dock-icons {
+    spacing: 6px;
+}
+
+.clean-dock-separator {
+    width: 1px;
+    margin: 8px 4px;
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+.clean-dock-item {
+    border-radius: 12px;
+    padding: 4px 5px 2px 5px;
+    transition-duration: 120ms;
+}
+
+.clean-dock-item:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+.clean-dock-item:focus {
+    background-color: rgba(255, 255, 255, 0.14);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.45);
+}
+
+.clean-dock-item:active {
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+.clean-dock-item.focused {
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.clean-dock-dots {
+    spacing: 3px;
+    height: 6px;
+    margin-top: 3px;
+}
+
+.clean-dock-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 99px;
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+.clean-dock-dot.focused {
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.96);
+}
+
+.clean-dock-badge {
+    min-width: 18px;
+    min-height: 18px;
+    padding: 0;
+    border-radius: 99px;
+    background-color: #e01b24;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+.clean-dock-badge.wide {
+    padding: 0 5px;
+}
+
+.clean-dock-badge-label {
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 10px;
+    text-align: center;
+}
+
+.clean-dock-tooltip {
+    background-color: rgba(24, 24, 28, 0.92);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
