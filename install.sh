@@ -67,6 +67,7 @@ fi
 if [[ "${1:-}" == "--uninstall" ]]; then
     gnome-extensions disable "$UUID" 2>/dev/null || true
     update_enabled_extensions disable
+    gnome-extensions uninstall "$UUID" 2>/dev/null || rm -rf "$DEST_DIR"
     rm -rf "$DEST_DIR"
     echo "Removed ${UUID} from ${DEST_DIR}."
     exit 0
@@ -101,6 +102,7 @@ glib-compile-schemas --strict --dry-run "${SRC_DIR}/schemas"
 migrated_legacy=0
 if [[ -d "${EXT_BASE}/${LEGACY_UUID}" ]]; then
     gnome-extensions disable "$LEGACY_UUID" 2>/dev/null || true
+    gnome-extensions uninstall "$LEGACY_UUID" 2>/dev/null || rm -rf "${EXT_BASE}/${LEGACY_UUID}"
     rm -rf "${EXT_BASE}/${LEGACY_UUID}"
     migrated_legacy=1
 fi
